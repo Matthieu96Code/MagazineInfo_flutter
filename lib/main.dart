@@ -50,6 +50,7 @@ class PageAccueil extends StatelessWidget {
               ),
             ),
             PartieTitre(),
+            PartieTexte(),
 
           ],
         ),
@@ -85,6 +86,18 @@ class PartieTitre extends StatelessWidget {
               ),),
         ],
       ),
+    );
+  }
+}
+
+class PartieTexte extends StatelessWidget {
+  const PartieTexte({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(20),
+      child: Text('Magazine Infos est bien plus qu\'un simple magazine d\'informations. C\'est votre passerelle vers le monde, une source innestimable de connaissances et d\'actualités "Développeur 14 CV  10min "'),
     );
   }
 }
