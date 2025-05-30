@@ -51,6 +51,7 @@ class PageAccueil extends StatelessWidget {
             ),
             PartieTitre(),
             PartieTexte(),
+            PartieIcone(),
 
           ],
         ),
@@ -98,6 +99,58 @@ class PartieTexte extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       child: Text('Magazine Infos est bien plus qu\'un simple magazine d\'informations. C\'est votre passerelle vers le monde, une source innestimable de connaissances et d\'actualités "Développeur 14 CV  10min "'),
+    );
+  }
+}
+
+class PartieIcone extends StatelessWidget {
+  const PartieIcone({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(bottom: 10.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Container(
+            child: Column(
+              children: [
+                Icon(Icons.phone, color: Colors.pink),
+                SizedBox(height: 5,),
+                Text('TEL',
+                    style: TextStyle(
+                    color: Colors.pink
+                    ),)
+              ],
+            ),
+          ),
+          Container(
+            child: Column(
+              children: [
+                Icon(Icons.mail, color: Colors.pink),
+                SizedBox(height: 5,),
+                Text('MAIL',
+                    style: TextStyle(
+                    color: Colors.pink
+                    ),)
+              ],
+            ),
+          ),
+          Container(
+            child: Column(
+              children: [
+                Icon(Icons.share, color: Colors.pink),
+                SizedBox(height: 5,),
+                Text('PARTAGE',
+                    style: TextStyle(
+                    color: Colors.pink
+                    ),)
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
