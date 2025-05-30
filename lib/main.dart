@@ -52,7 +52,7 @@ class PageAccueil extends StatelessWidget {
             PartieTitre(),
             PartieTexte(),
             PartieIcone(),
-
+            PartieRubrique(),
           ],
         ),
       ),
@@ -149,6 +149,34 @@ class PartieIcone extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class PartieRubrique extends StatelessWidget {
+  const PartieRubrique({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            child: Image.asset(
+                'assets/images/magazineInfo.png',
+                width: 150,),
+          ),
+          ClipRRect(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            child: Image.asset(
+                'assets/images/magazineInfo.png',
+                width: 150,),
+          )
         ],
       ),
     );
