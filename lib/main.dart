@@ -40,6 +40,50 @@ class PageAccueil extends StatelessWidget {
         title: Text('Magazine Infos'),
       ),
       body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Flexible(
+              child: Image.asset(
+                'assets/images/magazineInfo.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+            PartieTitre(),
+
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.purple[400],
+        child: Text('Click'),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class PartieTitre extends StatelessWidget {
+  const PartieTitre({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text(
+            'Bienvenue au Magazine Infos',
+            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+          ),
+          Text('Votre magazine numérique votre source d\'inspiration',
+              style: TextStyle(
+                fontSize: 14.5,
+                fontWeight: FontWeight.w500
+              ),),
+        ],
       ),
     );
   }
