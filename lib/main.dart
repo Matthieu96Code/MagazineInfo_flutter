@@ -98,7 +98,7 @@ class PartieTexte extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(20),
-      child: Text('Magazine Infos est bien plus qu\'un simple magazine d\'informations. C\'est votre passerelle vers le monde, une source innestimable de connaissances et d\'actualités "Développeur 14 CV  10min "'),
+      child: Text('Magazine Infos est bien plus qu\'un simple magazine d\'informations. C\'est votre passerelle vers le monde, une source innestimable de connaissances et d\'actualités soigneusement sélectionnées pour vous éclairer sur les enjeux mondiaux, la culture, la science, la, et voir même le divertissement (jeux).'),
     );
   }
 }
